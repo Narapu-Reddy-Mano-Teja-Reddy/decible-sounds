@@ -415,8 +415,7 @@ button, input, select, textarea {
 
 /* Additional 3D depth layer for section pages and interactive cards. */
 body {
-  perspective: 1800px;
-  perspective-origin: 50% 18%;
+  perspective: none;
 }
 
 .hero-section,
