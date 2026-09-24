@@ -9,7 +9,29 @@ document.addEventListener('DOMContentLoaded', () => {
   const navLinks = document.querySelectorAll('.nav-link');
   const sections = document.querySelectorAll('section');
 
+  // Reveal each full-screen panel as it reaches the hero position.
+  const flipPanels = document.querySelectorAll('section.hero-section, section.section-padding, section.experience-reveal, section.cta-section');
+  const flipObserver = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+      entry.target.classList.toggle('is-visible', entry.isIntersecting);
+    });
+  }, { threshold: 0.1 });
+
+  flipPanels.forEach((panel) => flipObserver.observe(panel));
+
+  function updateFlipDirection() {
+    flipPanels.forEach((panel) => {
+      const rect = panel.getBoundingClientRect();
+      panel.classList.toggle('is-before', rect.bottom <= 0);
+      panel.classList.toggle('is-after', rect.top >= window.innerHeight);
+    });
+  }
+
+  updateFlipDirection();
+
   window.addEventListener('scroll', () => {
+    updateFlipDirection();
+
     if (window.scrollY > 40) {
       navbar?.classList.add('scrolled');
     } else {
@@ -40,12 +62,37 @@ document.addEventListener('DOMContentLoaded', () => {
   const sideNums = document.querySelectorAll('.side-num');
 
   let activeFrameIndex = -1;
+  let frameFlipTimer;
+
+  function flipToFrame(targetIndex) {
+    const previousIndex = activeFrameIndex;
+    const movingForward = targetIndex > previousIndex;
+    const previousFrame = revealFrames[previousIndex];
+    const nextFrame = revealFrames[targetIndex];
+
+    window.clearTimeout(frameFlipTimer);
+    revealFrames.forEach((frame) => {
+      frame.classList.remove('active', 'flip-in-forward', 'flip-in-backward', 'flip-out-forward', 'flip-out-backward');
+    });
+
+    if (previousFrame && previousFrame !== nextFrame) {
+      previousFrame.classList.add(movingForward ? 'flip-out-forward' : 'flip-out-backward');
+    }
+
+    nextFrame.classList.add('active', movingForward ? 'flip-in-forward' : 'flip-in-backward');
+
+    frameFlipTimer = window.setTimeout(() => {
+      revealFrames.forEach((frame) => {
+        frame.classList.remove('flip-in-forward', 'flip-in-backward', 'flip-out-forward', 'flip-out-backward');
+      });
+    }, 900);
+  }
 
   function updateFrameScroll() {
     if (!expSection) return;
 
     const rect = expSection.getBoundingClientRect();
-    const totalHeight = expSection.clientHeight - window.innerHeight;
+    const totalHeight = Math.max(1, expSection.clientHeight - window.innerHeight);
     const progress = Math.min(1, Math.max(0, -rect.top / totalHeight));
 
     let targetIndex = 0;
@@ -60,15 +107,8 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     if (targetIndex !== activeFrameIndex) {
+      flipToFrame(targetIndex);
       activeFrameIndex = targetIndex;
-
-      revealFrames.forEach((frame, idx) => {
-        if (idx === targetIndex) {
-          frame.classList.add('active');
-        } else {
-          frame.classList.remove('active');
-        }
-      });
 
       stepNavItems.forEach((item, idx) => {
         if (idx === targetIndex) {
@@ -109,10 +149,13 @@ document.addEventListener('DOMContentLoaded', () => {
   stepNavItems.forEach((item, idx) => {
     item.addEventListener('click', () => {
       if (!expSection) return;
-      const sectionTop = expSection.offsetTop;
-      const totalHeight = expSection.clientHeight - window.innerHeight;
-      const targetScroll = sectionTop + (totalHeight * (idx / 3));
-      window.scrollTo({ top: targetScroll, behavior: 'smooth' });
+      const targetIndex = Math.min(3, idx);
+      flipToFrame(targetIndex);
+      activeFrameIndex = targetIndex;
+
+      stepNavItems.forEach((navItem, navIndex) => {
+        navItem.classList.toggle('active', navIndex === idx);
+      });
     });
   });
 
@@ -172,3 +215,6 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 });
+
+
+
