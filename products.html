@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Products Catalog - Decibels Audio Systems</title>
+  <meta name="description" content="Explore Decibels Audio full catalog of loudspeakers, stage arrays, subwoofers, bookshelf monitors, and power amplifiers.">
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/responsive.css">
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+</head>
+<body>
+
+  <div class="custom-cursor" id="custom-cursor"></div>
+
+  <!-- Navbar -->
+  <header class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="index.html" class="brand-logo">
+        <img src="assets/logo.webp" alt="Decibels Logo" class="logo-img">
+        <span class="logo-subtext">AUDIO SYSTEMS</span>
+      </a>
+
+      <nav class="nav-menu" id="nav-menu">
+        <a href="index.html" class="nav-link">Experience</a>
+        <a href="services.html" class="nav-link">Services</a>
+        <a href="products.html" class="nav-link active">Products</a>
+        <a href="partners.html" class="nav-link">Partners</a>
+        <a href="portfolio.html" class="nav-link">Portfolio</a>
+        <a href="process.html" class="nav-link">Process</a>
+        <a href="estimate.html" class="nav-link">Estimate</a>
+      </nav>
+
+      <div class="nav-actions">
+        <a href="contact.html" class="nav-link">Contact</a>
+        <a href="estimate.html" class="btn btn-primary">BOOK CONSULTATION</a>
+        <button class="mobile-toggle" id="mobile-toggle"><i class="fa-solid fa-bars"></i></button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Banner -->
+  <section class="page-header-banner">
+    <div class="section-container">
+      <div class="label-badge"><span class="badge-dot"></span> PRODUCT CATALOG</div>
+      <h1 class="headline-large">ENGINEERED FOR<br><span class="text-red">PERFORMANCE.</span></h1>
+      <p class="body-desc">Click any product to inspect in 3D, view technical specifications, or request quotation.</p>
+
+      <!-- Category Filter Bar -->
+      <div style="display: flex; gap: 12px; margin-top: 36px; flex-wrap: wrap;">
+        <button class="btn btn-outline filter-btn active" data-filter="all">ALL</button>
+        <button class="btn btn-outline filter-btn" data-filter="party">PARTY</button>
+        <button class="btn btn-outline filter-btn" data-filter="home">HOME AUDIO</button>
+        <button class="btn btn-outline filter-btn" data-filter="pro">PRO AUDIO</button>
+        <button class="btn btn-outline filter-btn" data-filter="sub">SUBWOOFERS</button>
+        <button class="btn btn-outline filter-btn" data-filter="amps">AMPLIFIERS</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Products Catalog Grid -->
+  <section class="section-padding">
+    <div class="section-container">
+      <div class="product-cards-grid">
+        
+        <div class="product-3d-card" data-category="party">
+          <div class="card-image-wrapper">
+            <img src="assets/party_speaker.webp" alt="DS-1200 Tower">
+          </div>
+          <div class="product-tag">DS-1200 / PARTY TOWER</div>
+          <h3 class="product-name">DS-1200 Party Speaker</h3>
+          <p class="product-desc">1200W RMS Dual 12" Subwoofer Tower with RGB acoustic ring.</p>
+          <span style="color: var(--accent-red); font-weight: 700; font-size: 0.85rem;">INSPECT IN 3D →</span>
+        </div>
+
+        <div class="product-3d-card" data-category="sub">
+          <div class="card-image-wrapper">
+            <img src="assets/hero_subwoofer.webp" alt="DS-800 Subwoofer">
+          </div>
+          <div class="product-tag">DS-800 / SUBWOOFER</div>
+          <h3 class="product-name">DS-800 Pro Subwoofer</h3>
+          <p class="product-desc">18" Neodymium driver sub delivering 134dB peak SPL bass energy.</p>
+          <span style="color: var(--accent-red); font-weight: 700; font-size: 0.85rem;">INSPECT IN 3D →</span>
+        </div>
+
+        <div class="product-3d-card" data-category="home">
+          <div class="card-image-wrapper">
+            <img src="assets/home_audio.webp" alt="HA-400 Monitors">
+          </div>
+          <div class="product-tag">HA-400 / REFERENCE</div>
+          <h3 class="product-name">HA-400 Bookshelf Monitors</h3>
+          <p class="product-desc">Bi-amplified active studio reference monitor pair with silk dome tweeter.</p>
+          <span style="color: var(--accent-red); font-weight: 700; font-size: 0.85rem;">INSPECT IN 3D →</span>
+        </div>
+
+        <div class="product-3d-card" data-category="pro">
+          <div class="card-image-wrapper">
+            <img src="assets/pro_audio.webp" alt="LA-210 Concert Array">
+          </div>
+          <div class="product-tag">LA-210 / CONCERT ARRAY</div>
+          <h3 class="product-name">LA-210 Line Array Module</h3>
+          <p class="product-desc">Dual 10" neodymium stage array module with 110° horizontal dispersion.</p>
+          <span style="color: var(--accent-red); font-weight: 700; font-size: 0.85rem;">INSPECT IN 3D →</span>
+        </div>
+
+        <div class="product-3d-card" data-category="amps">
+          <div class="card-image-wrapper">
+            <img src="assets/amplifier.webp" alt="PX-5000 Class-D Amp">
+          </div>
+          <div class="product-tag">PX-5000 / POWER AMP</div>
+          <h3 class="product-name">PX-5000 DSP Amplifier</h3>
+          <p class="product-desc">4-channel 5000W Class-D amplifier with 96kHz DSP engine.</p>
+          <span style="color: var(--accent-red); font-weight: 700; font-size: 0.85rem;">INSPECT IN 3D →</span>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- 3D Interactive Model Inspector Modal -->
+  <div class="modal-overlay" id="product-3d-modal">
+    <div class="modal-window">
+      <button class="modal-close" id="modal-close-btn"><i class="fa-solid fa-xmark"></i></button>
+      <div style="display: grid; grid-template-columns: 1.2fr 0.8fr; gap: 40px; align-items: center;">
+        <div id="inspector-3d-container" style="height: 400px; background: rgba(0,0,0,0.5); border-radius: 12px; border: 1px solid var(--border-glass);"></div>
+        <div>
+          <div class="label-badge"><span class="badge-dot"></span> 3D MODEL INSPECTOR</div>
+          <h2 id="modal-product-title" style="font-size: 2rem; text-transform: uppercase; margin-bottom: 16px;">Product Title</h2>
+          <p style="color: var(--text-secondary); margin-bottom: 24px;">Rotate and inspect 3D geometry, component materials, and transducer housing.</p>
+          <a href="estimate.html" class="btn btn-primary" style="width: 100%;">REQUEST PRODUCT QUOTE →</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-bottom">
+        <p>© 2026 Decibels Audio Private Limited. All rights reserved.</p>
+        <p style="color: var(--accent-red);">Acoustic Perfection</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script src="js/products.js"></script>
+</body>
+</html>

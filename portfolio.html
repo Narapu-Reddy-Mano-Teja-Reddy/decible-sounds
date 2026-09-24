@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio - Decibels Audio Systems</title>
+  <meta name="description" content="Explore Decibels Audio portfolio of landmark acoustic installations across home theaters, auditoriums, luxury hotels, and live stadium events.">
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+
+  <div class="custom-cursor" id="custom-cursor"></div>
+
+  <!-- Header Navigation -->
+  <header class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="index.html" class="brand-logo">
+        <img src="assets/logo.webp" alt="Decibels Logo" class="logo-img">
+        <span class="logo-subtext">AUDIO SYSTEMS</span>
+      </a>
+
+      <nav class="nav-menu" id="nav-menu">
+        <a href="index.html" class="nav-link">Experience</a>
+        <a href="services.html" class="nav-link">Services</a>
+        <a href="products.html" class="nav-link">Products</a>
+        <a href="partners.html" class="nav-link">Partners</a>
+        <a href="portfolio.html" class="nav-link active">Portfolio</a>
+        <a href="process.html" class="nav-link">Process</a>
+        <a href="estimate.html" class="nav-link">Estimate</a>
+      </nav>
+
+      <div class="nav-actions">
+        <a href="contact.html" class="nav-link">Contact</a>
+        <a href="estimate.html" class="btn btn-primary">BOOK CONSULTATION</a>
+        <button class="mobile-toggle" id="mobile-toggle"><i class="fa-solid fa-bars"></i></button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Banner -->
+  <section class="page-header-banner">
+    <div class="section-container">
+      <div class="label-badge"><span class="badge-dot"></span> FEATURED INSTALLATIONS</div>
+      <h1 class="headline-large">ACOUSTIC<br><span class="text-red">PORTFOLIO.</span></h1>
+      <p class="body-desc">Landmark sound installations in luxury residences, civic auditoriums, fine dining lounges, and live event stadiums.</p>
+    </div>
+  </section>
+
+  <!-- Portfolio Grid -->
+  <section class="section-padding">
+    <div class="section-container">
+      <div class="product-cards-grid">
+        
+        <div class="product-3d-card portfolio-card">
+          <div class="card-image-wrapper" style="height: 220px;">
+            <img src="assets/app_home.webp" alt="Luxury Home Cinema">
+          </div>
+          <div class="portfolio-tag">RESIDENTIAL / HYDERABAD</div>
+          <h3 class="product-name">Luxury Dolby Cinema</h3>
+          <p class="product-desc">7.1.4 immersive Atmos setup with custom flush-mount subwoofers.</p>
+          <span style="color: var(--accent-red); font-weight: 700; font-size: 0.85rem;">VIEW CASE STUDY →</span>
+        </div>
+
+        <div class="product-3d-card portfolio-card">
+          <div class="card-image-wrapper" style="height: 220px;">
+            <img src="assets/app_auditorium.webp" alt="Grand Civic Hall">
+          </div>
+          <div class="portfolio-tag">CIVIC / BANGALORE</div>
+          <h3 class="product-name">Grand Civic Auditorium</h3>
+          <p class="product-desc">LA-210 concert line array setup with 18-inch subbass clusters.</p>
+          <span style="color: var(--accent-red); font-weight: 700; font-size: 0.85rem;">VIEW CASE STUDY →</span>
+        </div>
+
+        <div class="product-3d-card portfolio-card">
+          <div class="card-image-wrapper" style="height: 220px;">
+            <img src="assets/app_hotel.webp" alt="Rooftop Lounge">
+          </div>
+          <div class="portfolio-tag">HOSPITALITY / MUMBAI</div>
+          <h3 class="product-name">Sky Lounge & Bar</h3>
+          <p class="product-desc">Multi-zone weatherized background sound system with active crossover tuning.</p>
+          <span style="color: var(--accent-red); font-weight: 700; font-size: 0.85rem;">VIEW CASE STUDY →</span>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Case Study Lightbox Modal -->
+  <div class="modal-overlay" id="portfolio-modal">
+    <div class="modal-window">
+      <button class="modal-close" id="portfolio-close-btn"><i class="fa-solid fa-xmark"></i></button>
+      <div class="label-badge"><span class="badge-dot"></span> <span id="modal-case-cat">PROJECT CASE STUDY</span></div>
+      <h2 id="modal-case-title" style="font-size: 2.2rem; text-transform: uppercase; margin-bottom: 16px;">Case Study Title</h2>
+      <p style="color: var(--text-secondary); margin-bottom: 24px; font-size: 1.05rem;">
+        Engineered with Decibels high-performance drivers, acoustic simulation modeling, and custom DSP tuning. Delivered on time with zero acoustic compromise.
+      </p>
+      <a href="contact.html" class="btn btn-primary">BOOK SIMILAR PROJECT CONSULTATION →</a>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-bottom">
+        <p>© 2026 Decibels Audio Private Limited. All rights reserved.</p>
+        <p style="color: var(--accent-red);">Acoustic Perfection</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script src="js/portfolio.js"></script>
+</body>
+</html>

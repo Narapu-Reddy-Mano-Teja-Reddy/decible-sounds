@@ -1,0 +1,736 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Decibels Audio Systems - Engineered for Real Sound</title>
+  <meta name="description" content="Professional audio systems engineered for powerful, immersive and reliable sound experiences. Decibels Audio creates audio solutions for every space.">
+  
+  <!-- Google Fonts: Inter / Outfit / Plus Jakarta Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800;900&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  
+  <!-- FontAwesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Background Ambient Glow Effects -->
+  <div class="glow-bg glow-hero"></div>
+  <div class="glow-bg glow-power"></div>
+  <div class="glow-bg glow-footer"></div>
+
+  <!-- Header / Navigation Bar -->
+  <header class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#hero" class="brand-logo" id="nav-brand-logo">
+        <img src="assets/logo.webp" alt="Decibels Logo" class="logo-img">
+        <span class="logo-subtext">AUDIO SYSTEMS</span>
+      </a>
+
+      <nav class="nav-menu" id="nav-menu">
+        <a href="#hero" class="nav-link active">Experience</a>
+        <a href="services.html" class="nav-link">Services</a>
+        <a href="products.html" class="nav-link">Products</a>
+        <a href="partners.html" class="nav-link">Partners</a>
+        <a href="portfolio.html" class="nav-link">Portfolio</a>
+        <a href="process.html" class="nav-link">Process</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+      </nav>
+
+      <div class="nav-actions">
+        <button class="btn btn-outline-pill trigger-quote-btn" id="nav-book-btn">
+          Book Consultation <i class="fa-solid fa-chevron-right"></i>
+        </button>
+        <button class="mobile-toggle" id="mobile-toggle" aria-label="Toggle Navigation">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section with Full-Bleed Background Video -->
+  <section class="hero-section" id="hero">
+    <div class="hero-video-wrapper">
+      <video class="hero-video-bg" autoplay loop muted playsinline poster="assets/ezgif-frame-003.webp">
+        <source src="assets/homepagevideo.mp4" type="video/mp4">
+      </video>
+      <div class="hero-video-overlay"></div>
+    </div>
+
+
+
+    <div class="hero-container">
+      <div class="hero-content">
+        <span class="hero-brand-tag">DECIBELS AUDIO SYSTEMS</span>
+        
+        <h1 class="hero-title">
+          ENGINEERED<br>
+          FOR REAL<br>
+          <span class="text-glow-red">SOUND.</span>
+        </h1>
+
+        <p class="hero-subtitle">
+          Professional audio systems engineered for powerful, immersive and reliable sound experiences.
+        </p>
+
+        <div class="hero-cta-group">
+          <a href="products.html" class="btn btn-primary btn-glow">
+            Explore Products <i class="fa-solid fa-arrow-right"></i>
+          </a>
+          <button class="btn btn-circle-play trigger-quote-btn" id="hero-book-btn">
+            Book a Consultation <span class="play-circle-icon"><i class="fa-solid fa-chevron-right"></i></span>
+          </button>
+        </div>
+
+        <div class="scroll-indicator">
+          <div class="mouse-icon">
+            <div class="mouse-wheel"></div>
+          </div>
+          <span>SCROLL TO EXPLORE</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section 2: OUR PRODUCTS ("SOUND FOR EVERY SPACE.") -->
+  <section class="products-section section-padding" id="products">
+    <div class="section-container">
+      
+      <!-- Top Banner/Hero Card (Matches reference mockup layout) -->
+      <div class="products-banner-hero">
+        <div class="banner-overlay-dark"></div>
+        <div class="banner-content-wrap">
+          
+          <div class="banner-text-left">
+            <div class="tag-with-line">
+              <span class="dash-line"></span>
+              <span class="tag-text">OUR PRODUCTS</span>
+            </div>
+            
+            <h2 class="products-banner-title">
+              SOUND FOR<br>
+              <span class="text-glow-coral">EVERY SPACE.</span>
+            </h2>
+            
+            <p class="products-banner-desc">
+              From professional installations to immersive entertainment environments, Decibels creates audio solutions designed around the space, the audience and the experience.
+            </p>
+            
+            <a href="products.html" class="btn-pill-arrow">
+              <span class="pill-arrow-icon"><i class="fa-solid fa-arrow-right"></i></span>
+              <span>View All Products</span>
+            </a>
+          </div>
+
+          <!-- Vertical Step Indicators (01-04) on Far Right -->
+          <div class="banner-side-steps">
+            <div class="side-step-item active">
+              <span class="side-step-num">01</span>
+              <span class="side-step-indicator"></span>
+            </div>
+            <div class="side-step-item"><span class="side-step-num">02</span></div>
+            <div class="side-step-item"><span class="side-step-num">03</span></div>
+            <div class="side-step-item"><span class="side-step-num">04</span></div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- 4 High-End Product Cards Grid -->
+      <div class="products-cards-grid">
+        
+        <!-- Card 1: Party Speakers -->
+        <div class="prod-card card-party" onclick="window.location.href='products.html'">
+          <div class="prod-card-bg" style="background-image: url('assets/party_speaker_card.webp');"></div>
+          <div class="prod-card-overlay"></div>
+          
+          <div class="prod-card-content">
+            <div class="card-badge badge-red">
+              <i class="fa-solid fa-sliders"></i>
+            </div>
+            
+            <div class="card-footer-row">
+              <div class="card-text-col">
+                <h3 class="card-title">Party Speakers</h3>
+                <p class="card-subtitle">Powerful. Portable. Party Ready.</p>
+              </div>
+              <button class="card-circle-arrow" aria-label="View Party Speakers">
+                <i class="fa-solid fa-arrow-right"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 2: Home Audio -->
+        <div class="prod-card card-home" onclick="window.location.href='products.html'">
+          <div class="prod-card-bg" style="background-image: url('assets/home_audio_card.webp');"></div>
+          <div class="prod-card-overlay"></div>
+          
+          <div class="prod-card-content">
+            <div class="card-badge badge-gold">
+              <i class="fa-solid fa-house"></i>
+            </div>
+            
+            <div class="card-footer-row">
+              <div class="card-text-col">
+                <h3 class="card-title">Home Audio</h3>
+                <p class="card-subtitle">Pure Sound. Elegant Design.</p>
+              </div>
+              <button class="card-circle-arrow" aria-label="View Home Audio">
+                <i class="fa-solid fa-arrow-right"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 3: Pro Audio -->
+        <div class="prod-card card-pro" onclick="window.location.href='products.html'">
+          <div class="prod-card-bg" style="background-image: url('assets/pro_audio_card.webp');"></div>
+          <div class="prod-card-overlay"></div>
+          
+          <div class="prod-card-content">
+            <div class="card-badge badge-blue">
+              <i class="fa-solid fa-chart-simple"></i>
+            </div>
+            
+            <div class="card-footer-row">
+              <div class="card-text-col">
+                <h3 class="card-title">Pro Audio</h3>
+                <p class="card-subtitle">Built for Professionals.</p>
+              </div>
+              <button class="card-circle-arrow" aria-label="View Pro Audio">
+                <i class="fa-solid fa-arrow-right"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 4: Amplifiers -->
+        <div class="prod-card card-amp" onclick="window.location.href='products.html'">
+          <div class="prod-card-bg" style="background-image: url('assets/amplifier_card.webp');"></div>
+          <div class="prod-card-overlay"></div>
+          
+          <div class="prod-card-content">
+            <div class="card-badge badge-purple">
+              <i class="fa-solid fa-bolt"></i>
+            </div>
+            
+            <div class="card-footer-row">
+              <div class="card-text-col">
+                <h3 class="card-title">Amplifiers</h3>
+                <p class="card-subtitle">Pure Power. Total Control.</p>
+              </div>
+              <button class="card-circle-arrow" aria-label="View Amplifiers">
+                <i class="fa-solid fa-arrow-right"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Section 3: THE ENGINEERING / 4-FRAME SCROLL REVEAL (400vh) -->
+  <section class="experience-reveal" id="experience-reveal-section">
+    <div class="experience-sticky">
+      <div class="engineering-layout">
+        
+        <!-- Left Side Text & Bullets -->
+        <div class="eng-left-col">
+          <span class="section-tag-red">THE ENGINEERING</span>
+          <h2 class="story-headline">
+            MORE THAN<br>
+            <span class="text-glow-red">JUST SOUND.</span>
+          </h2>
+          <p class="story-desc">
+            Every Decibels product is built around precise engineering, refined materials and a relentless pursuit of acoustic performance.
+          </p>
+          <ul class="feature-bullet-list">
+            <li><i class="fa-solid fa-gem bullet-icon"></i> Superior Sound Quality</li>
+            <li><i class="fa-solid fa-shield-halved bullet-icon"></i> Rugged Durability</li>
+            <li><i class="fa-solid fa-microchip bullet-icon"></i> Advanced Technology</li>
+            <li><i class="fa-solid fa-earth-americas bullet-icon"></i> Made for Every Environment</li>
+          </ul>
+        </div>
+
+        <!-- Center Stage: 4 Frame Images -->
+        <div class="eng-center-stage">
+          <div class="frame-glow-backdrop"></div>
+          <div class="frame-images-wrapper">
+            <img src="assets/ezgif-frame-003.webp" class="reveal-frame active" id="frame-1" alt="Assembled Subwoofer">
+            <img src="assets/ezgif-frame-019.webp" class="reveal-frame" id="frame-2" alt="Subwoofer Opening">
+            <img src="assets/ezgif-frame-024.webp" class="reveal-frame" id="frame-3" alt="Exploded Speaker Assembly">
+            <img src="assets/ezgif-frame-040.webp" class="reveal-frame" id="frame-4" alt="Reassembled Subwoofer">
+          </div>
+        </div>
+
+        <!-- Right Side Navigation -->
+        <div class="eng-right-col">
+          <div class="step-nav-item active" data-step="0">
+            <span class="step-nav-text">More Than<br><small>Just Sound.</small></span>
+          </div>
+          <div class="step-nav-item" data-step="1">
+            <span class="step-nav-text">Engineered<br><small>From Within.</small></span>
+          </div>
+          <div class="step-nav-item" data-step="2">
+            <span class="step-nav-text">Precision In<br><small>Every Component.</small></span>
+          </div>
+          <div class="step-nav-item" data-step="3">
+            <span class="step-nav-text">Built to<br><small>Perform.</small></span>
+          </div>
+          <div class="step-nav-item" data-step="4">
+            <span class="step-nav-text">Engineered<br><small>Together.</small></span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Section 4: THE TECHNOLOGY ("THE TECHNOLOGY BEHIND THE SOUND.") -->
+  <section class="technology-section section-padding" id="technology">
+    <div class="section-container">
+      
+      <div class="tech-hero-wrapper">
+        <div class="tech-bg-overlay"></div>
+        
+        <div class="tech-content-grid">
+          
+          <!-- Left Column: Headers & Video Preview Card -->
+          <div class="tech-left-col">
+            <div class="tag-with-line">
+              <span class="dash-line"></span>
+              <span class="tag-text">THE TECHNOLOGY</span>
+            </div>
+            
+            <h2 class="tech-banner-title">
+              THE<br>
+              TECHNOLOGY<br>
+              BEHIND <span class="text-glow-coral">THE</span><br>
+              <span class="text-glow-coral">SOUND.</span>
+            </h2>
+            
+            <p class="tech-banner-desc">
+              Advanced engineering. Premium components. Uncompromising performance.
+            </p>
+            
+            <a href="technology.html" class="btn-pill-arrow tech-explore-btn">
+              <span class="pill-arrow-icon"><i class="fa-solid fa-arrow-right"></i></span>
+              <span>Explore Technology</span>
+            </a>
+            
+            <!-- Video / Preview Card at Bottom Left -->
+            <div class="tech-preview-card" onclick="window.location.href='technology.html'">
+              <img src="assets/tech_video_preview.webp" alt="Exploded Speaker Assembly" class="preview-img">
+              <div class="preview-overlay"></div>
+              <div class="preview-play-btn">
+                <i class="fa-solid fa-play"></i>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right Column: 4 Vertical Glassmorphic Component Cards -->
+          <div class="tech-right-col">
+            <div class="tech-cards-flex">
+              
+              <!-- Card 1: Precision Driver -->
+              <div class="tech-comp-card card-red-glow">
+                <div class="comp-icon-circle">
+                  <img src="assets/tech_driver.webp" alt="Precision Driver">
+                </div>
+                <h3 class="comp-title">Precision Driver</h3>
+                <p class="comp-desc">Crystal clear highs and detailed mids.</p>
+                <div class="comp-bar bar-red"></div>
+              </div>
+
+              <!-- Card 2: Voice Coil -->
+              <div class="tech-comp-card card-blue-glow">
+                <div class="comp-icon-circle">
+                  <img src="assets/tech_voice_coil.webp" alt="Voice Coil">
+                </div>
+                <h3 class="comp-title">Voice Coil</h3>
+                <p class="comp-desc">High power handling and low distortion.</p>
+                <div class="comp-bar bar-blue"></div>
+              </div>
+
+              <!-- Card 3: Magnet -->
+              <div class="tech-comp-card card-purple-glow">
+                <div class="comp-icon-circle">
+                  <img src="assets/tech_magnet.webp" alt="Magnet">
+                </div>
+                <h3 class="comp-title">Magnet</h3>
+                <p class="comp-desc">Stronger field, better control.</p>
+                <div class="comp-bar bar-purple"></div>
+              </div>
+
+              <!-- Card 4: Acoustic Chamber -->
+              <div class="tech-comp-card card-gold-glow">
+                <div class="comp-icon-circle">
+                  <img src="assets/tech_chamber.webp" alt="Acoustic Chamber">
+                </div>
+                <h3 class="comp-title">Acoustic Chamber</h3>
+                <p class="comp-desc">Clean, natural sound stage.</p>
+                <div class="comp-bar bar-gold"></div>
+              </div>
+
+            </div>
+
+            <!-- Bottom Counter (01 / 04) -->
+            <div class="tech-counter-row">
+              <span class="counter-num active">01</span>
+              <span class="counter-slash">/ 04</span>
+              <span class="counter-line"></span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Section 5: MANUFACTURING ("FROM VISION TO VIBRATION!") -->
+  <section class="manufacturing-section section-padding" id="manufacturing">
+    <div class="section-container">
+      <div class="section-header-split">
+        <div class="section-header-left">
+          <span class="section-tag-red">MANUFACTURING</span>
+          <h2 class="section-title">
+            FROM VISION<br>
+            TO <span class="text-glow-red">VIBRATION!</span>
+          </h2>
+          <p class="section-desc">
+            We combine advanced technology, skilled craftsmanship and rigorous testing to deliver audio systems that perform beyond expectations.
+          </p>
+          <a href="process.html" class="btn btn-circle-icon">
+            <span class="circle-btn-icon"><i class="fa-solid fa-chevron-right"></i></span> Our Process
+          </a>
+        </div>
+
+        <div class="section-slider-controls">
+          <button class="arrow-btn" id="mfg-prev"><i class="fa-solid fa-chevron-left"></i></button>
+          <button class="arrow-btn" id="mfg-next"><i class="fa-solid fa-chevron-right"></i></button>
+        </div>
+      </div>
+
+      <!-- Full-Width Factory Panoramic Banner -->
+      <div class="mfg-banner-container">
+        <img src="assets/factory_manufacturing.webp" alt="Decibels Assembly Factory" class="mfg-banner-img">
+        <div class="mfg-banner-overlay">
+          <div class="mfg-banner-caption">
+            <span class="red-line-bar"></span>
+            <div>
+              <h3>BUILT WITH PRECISION</h3>
+              <p>DELIVERED WITH CONFIDENCE.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section 6: OUR PORTFOLIO ("ICONIC SPACES. IMMERSIVE EXPERIENCES.") -->
+  <section class="portfolio-section section-padding" id="portfolio">
+    <div class="section-container">
+      
+      <!-- Top Banner/Hero Card (Matches reference mockup layout) -->
+      <div class="port-banner-hero">
+        <div class="banner-overlay-dark"></div>
+        <div class="banner-content-wrap">
+          
+          <div class="banner-text-left">
+            <div class="tag-with-line">
+              <span class="dash-line"></span>
+              <span class="tag-text">OUR PORTFOLIO</span>
+            </div>
+            
+            <h2 class="products-banner-title">
+              ICONIC SPACES.<br>
+              IMMERSIVE<br>
+              <span class="text-glow-coral">EXPERIENCES.</span>
+            </h2>
+            
+            <p class="products-banner-desc">
+              From luxury homes to large-scale venues, our audio systems bring spaces to life with unmatched clarity and power.
+            </p>
+            
+            <a href="portfolio.html" class="btn-pill-arrow">
+              <span class="pill-arrow-icon"><i class="fa-solid fa-arrow-right"></i></span>
+              <span>View Portfolio</span>
+            </a>
+          </div>
+
+          <!-- Slider Arrow Controls on Far Right -->
+          <div class="port-header-controls">
+            <button class="port-arrow-btn" aria-label="Previous Slide"><i class="fa-solid fa-chevron-left"></i></button>
+            <button class="port-arrow-btn" aria-label="Next Slide"><i class="fa-solid fa-chevron-right"></i></button>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- 3 High-End Portfolio Cards Grid -->
+      <div class="portfolio-cards-grid">
+        
+        <!-- Card 1: Home Theatre -->
+        <div class="prod-card card-party" onclick="window.location.href='portfolio.html'">
+          <div class="prod-card-bg" style="background-image: url('assets/port_home_theatre.webp');"></div>
+          <div class="prod-card-overlay"></div>
+          
+          <div class="prod-card-content">
+            <div class="card-badge badge-red">
+              <i class="fa-solid fa-house"></i>
+            </div>
+            
+            <div class="card-footer-row">
+              <div class="card-text-col">
+                <h3 class="card-title">Home Theatre</h3>
+                <p class="card-subtitle">Private. Luxurious. Unforgettable.</p>
+              </div>
+              <button class="card-circle-arrow" aria-label="View Home Theatre">
+                <i class="fa-solid fa-arrow-right"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 2: Auditorium -->
+        <div class="prod-card card-home" onclick="window.location.href='portfolio.html'">
+          <div class="prod-card-bg" style="background-image: url('assets/app_auditorium.webp');"></div>
+          <div class="prod-card-overlay"></div>
+          
+          <div class="prod-card-content">
+            <div class="card-badge badge-gold">
+              <i class="fa-solid fa-masks-theater"></i>
+            </div>
+            
+            <div class="card-footer-row">
+              <div class="card-text-col">
+                <h3 class="card-title">Auditorium</h3>
+                <p class="card-subtitle">Clarity for every seat.</p>
+              </div>
+              <button class="card-circle-arrow" aria-label="View Auditorium">
+                <i class="fa-solid fa-arrow-right"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 3: Hotel -->
+        <div class="prod-card card-amp" onclick="window.location.href='portfolio.html'">
+          <div class="prod-card-bg" style="background-image: url('assets/app_hotel.webp');"></div>
+          <div class="prod-card-overlay"></div>
+          
+          <div class="prod-card-content">
+            <div class="card-badge badge-purple">
+              <i class="fa-solid fa-utensils"></i>
+            </div>
+            
+            <div class="card-footer-row">
+              <div class="card-text-col">
+                <h3 class="card-title">Hotel</h3>
+                <p class="card-subtitle">Exceptional sound. Elevated ambience.</p>
+              </div>
+              <button class="card-circle-arrow" aria-label="View Hotel">
+                <i class="fa-solid fa-arrow-right"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Section 7: OUR PARTNERS ("BUILT WITH THE BEST IN SOUND.") -->
+  <section class="partners-section section-padding" id="partners">
+    <div class="section-container">
+      
+      <div class="partners-banner-hero">
+        <div class="banner-overlay-dark"></div>
+        
+        <div class="partners-hero-content">
+          
+          <div class="partners-text-left">
+            <span class="partners-sub-tag">PREMIUM AUDIO SOLUTIONS</span>
+            
+            <h2 class="partners-banner-title">
+              BUILT WITH<br>
+              <span class="text-glow-gold">THE BEST IN SOUND.</span>
+            </h2>
+            
+            <p class="partners-banner-desc">
+              We collaborate with world-class brands and partners to deliver cutting-edge audio solutions.
+            </p>
+            
+            <a href="partners.html" class="btn-pill-arrow">
+              <span class="pill-arrow-icon"><i class="fa-solid fa-arrow-right"></i></span>
+              <span>View All Partners</span>
+            </a>
+          </div>
+
+          <!-- Slider Controls on Right -->
+          <div class="partners-header-controls">
+            <button class="port-arrow-btn" id="part-prev" aria-label="Previous Partner"><i class="fa-solid fa-chevron-left"></i></button>
+            <button class="port-arrow-btn" id="part-next" aria-label="Next Partner"><i class="fa-solid fa-chevron-right"></i></button>
+          </div>
+
+        </div>
+
+        <!-- Bottom Marquee Bar with Brand Logos and Dividers -->
+        <div class="partners-bottom-bar">
+          <div class="partner-brand-item">
+            <span class="partner-logo-name">JBL</span>
+          </div>
+          <div class="brand-divider"></div>
+          <div class="partner-brand-item">
+            <span class="partner-logo-name">HARMAN</span>
+          </div>
+          <div class="brand-divider"></div>
+          <div class="partner-brand-item">
+            <span class="partner-logo-name">BOSCH</span>
+          </div>
+          <div class="brand-divider"></div>
+          <div class="partner-brand-item">
+            <span class="partner-logo-name">QSC</span>
+          </div>
+          <div class="brand-divider"></div>
+          <div class="partner-brand-item">
+            <span class="partner-logo-name">Pioneer</span>
+          </div>
+          <div class="brand-divider"></div>
+          <div class="partner-brand-item">
+            <span class="partner-logo-name">SAMSUNG</span>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Section 8: CALL TO ACTION ("LET'S CREATE SOMETHING EXTRAORDINARY.") -->
+  <section class="cta-section" id="cta">
+    <div class="cta-container">
+      <div class="cta-bg-lights"></div>
+      <div class="cta-content">
+        <span class="section-tag-red">CALL TO ACTION</span>
+        <h2 class="cta-title">
+          LET'S CREATE<br>
+          <span class="text-glow-red">SOMETHING EXTRAORDINARY.</span>
+        </h2>
+        <p class="cta-desc">
+          Your space. Our expertise. A sound experience like no other.
+        </p>
+
+        <div class="cta-btn-group">
+          <button class="btn btn-primary btn-glow trigger-quote-btn">
+            Book a Consultation <i class="fa-solid fa-arrow-right"></i>
+          </button>
+          <a href="products.html" class="btn btn-link-white">
+            Explore Products
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section 9: FOOTER -->
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-grid">
+        <!-- Col 1: Brand Info -->
+        <div class="footer-col-brand">
+          <a href="#hero" class="brand-logo">
+            <img src="assets/logo.webp" alt="Decibels Logo" class="logo-img">
+            <span class="logo-subtext">AUDIO SYSTEMS</span>
+          </a>
+          <p class="footer-brand-tagline">ENGINEERED FOR REAL SOUND.</p>
+        </div>
+
+        <!-- Col 2: Navigation Links -->
+        <div class="footer-col-links">
+          <a href="#hero">Experience</a>
+          <a href="services.html">Services</a>
+          <a href="products.html">Products</a>
+          <a href="partners.html">Partners</a>
+        </div>
+
+        <div class="footer-col-links">
+          <a href="portfolio.html">Portfolio</a>
+          <a href="process.html">Process</a>
+          <a href="estimate.html">Estimate</a>
+          <a href="contact.html">Contact</a>
+        </div>
+
+        <!-- Col 3: Social Links -->
+        <div class="footer-col-social">
+          <h4>Stay Connected</h4>
+          <div class="footer-social-icons">
+            <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+            <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>© 2026 Decibels Audio Systems. All rights reserved.</p>
+        <p class="footer-craft">Crafted for acoustic excellence.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Drawer: Quote Request Slide-over -->
+  <div class="drawer-overlay" id="quote-drawer-overlay">
+    <div class="drawer" id="quote-drawer">
+      <div class="drawer-header">
+        <h3><span class="text-red">DECIBELS</span> AUDIO CONSULTATION</h3>
+        <button class="close-drawer" id="close-drawer-btn"><i class="fa-solid fa-xmark"></i></button>
+      </div>
+      
+      <form class="quote-form" id="quote-form">
+        <div class="form-group">
+          <label for="q-name">Full Name *</label>
+          <input type="text" id="q-name" placeholder="John Doe" required>
+        </div>
+
+        <div class="form-group">
+          <label for="q-email">Business Email *</label>
+          <input type="email" id="q-email" placeholder="john@company.com" required>
+        </div>
+
+        <div class="form-group">
+          <label for="q-category">Audio Category</label>
+          <select id="q-category">
+            <option value="party">Party Speakers</option>
+            <option value="home">Home Audio / Theater</option>
+            <option value="pro">Pro Audio / Line Array</option>
+            <option value="amplifier">Power Amplifiers</option>
+            <option value="custom">Custom OEM/ODM Solution</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="q-message">Project / Requirement Details</label>
+          <textarea id="q-message" rows="4" placeholder="Tell us about your venue, space size, budget, or specifications..."></textarea>
+        </div>
+
+        <button type="submit" class="btn btn-primary btn-glow w-full">
+          Submit Consultation Request <i class="fa-solid fa-arrow-right"></i>
+        </button>
+      </form>
+    </div>
+  </div>
+
+  <script src="main.js"></script>
+</body>
+</html>
