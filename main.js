@@ -60,6 +60,13 @@ document.addEventListener('DOMContentLoaded', () => {
   const revealFrames = document.querySelectorAll('.reveal-frame');
   const stepNavItems = document.querySelectorAll('.step-nav-item');
   const sideNums = document.querySelectorAll('.side-num');
+  const engineeringTitle = document.getElementById('engineering-active-title');
+  const engineeringTitles = [
+    'MORE THAN<br><span class="text-glow-red">JUST SOUND.</span>',
+    'ENGINEERED<br><span class="text-glow-red">FROM WITHIN.</span>',
+    'PRECISION IN<br><span class="text-glow-red">EVERY COMPONENT.</span>',
+    'BUILT TO<br><span class="text-glow-red">PERFORM.</span>'
+  ];
 
   let activeFrameIndex = -1;
   let frameFlipTimer;
@@ -109,6 +116,7 @@ document.addEventListener('DOMContentLoaded', () => {
     if (targetIndex !== activeFrameIndex) {
       flipToFrame(targetIndex);
       activeFrameIndex = targetIndex;
+      if (engineeringTitle) engineeringTitle.innerHTML = engineeringTitles[targetIndex];
 
       stepNavItems.forEach((item, idx) => {
         if (idx === targetIndex) {
@@ -152,6 +160,7 @@ document.addEventListener('DOMContentLoaded', () => {
       const targetIndex = Math.min(3, idx);
       flipToFrame(targetIndex);
       activeFrameIndex = targetIndex;
+      if (engineeringTitle) engineeringTitle.innerHTML = engineeringTitles[targetIndex];
 
       stepNavItems.forEach((navItem, navIndex) => {
         navItem.classList.toggle('active', navIndex === idx);

@@ -2893,18 +2893,39 @@ body {
   position: relative;
   z-index: 2;
   width: 100%;
+  overflow: hidden;
   background: rgba(8, 8, 14, 0.88);
   border-top: 1px solid rgba(255, 255, 255, 0.08);
   backdrop-filter: blur(20px);
   min-height: 84px;
-  padding: 20px 40px;
+  padding: 20px 0;
+}
+
+.partners-marquee-track {
   display: flex;
+  width: max-content;
+  animation: partnersMarquee 34s linear infinite;
+  will-change: transform;
+}
+
+.partners-bottom-bar:hover .partners-marquee-track,
+.partners-bottom-bar:focus-within .partners-marquee-track {
+  animation-play-state: paused;
+}
+
+.partners-marquee-group {
+  display: flex;
+  flex: none;
   align-items: center;
-  justify-content: space-between;
+}
+
+@keyframes partnersMarquee {
+  from { transform: translateX(0); }
+  to { transform: translateX(-50%); }
 }
 
 .partner-brand-item {
-  flex: 1;
+  flex: 0 0 clamp(130px, 15vw, 210px);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -2943,18 +2964,23 @@ body {
   }
 
   .partners-bottom-bar {
-    flex-wrap: wrap;
-    gap: 16px;
     min-height: 96px;
-    padding: 18px 20px;
+    padding: 18px 0;
   }
 
   .brand-divider {
-    display: none;
+    display: block;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .partners-marquee-track {
+    animation: none;
+    transform: none;
   }
 
-  .partner-brand-item {
-    flex: 1 1 30%;
+  .partners-marquee-group[aria-hidden="true"] {
+    display: none;
   }
 }
 
